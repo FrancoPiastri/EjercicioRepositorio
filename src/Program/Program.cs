@@ -1,9 +1,16 @@
-﻿namespace Program;
+﻿using Library;
 
-class Program
+namespace Program
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello, World!");
+        static void Main(string[] args)
+        {
+            Ejercicio ejercicio = new Ejercicio();
+            string mensaje = ejercicio.aprender();
+            
+            Console.WriteLine(mensaje);
+        }
     }
 }
+
